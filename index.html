@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-     <meta charset="utf-8">
-     <title>Produce Portal</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
- <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Produce Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">    
-<style type="text/css">
-     	
-     /*Large desktop*/
-	@media (min-width: 980px){
-	body{
-	padding-top: 60px;
-	}
-	.linediv-l{
-	border-right: 1px white solid;
-	}
-	.linediv-r{
-	border-left: 1px white solid;
-	}
-	}
+          rel="stylesheet" type="text/css">
+    <style type="text/css">
 
-    /* Landscape phones and down */
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+      /* Landscape phones and down */
       @media (max-width: 480px) { 
        .copy {
          padding: 2.5% 10%;
@@ -40,7 +40,7 @@
        }
       }
 
-     /* All form factors */
+      /* All form factors */
 
       /* Main body and headings */
       body{
@@ -60,7 +60,7 @@
         line-height: 24px;
       }
 
-     /* Video pitch and Action */
+      /* Video pitch and Action */
       .pitch {
         padding: 2.5% 0%;
       }
@@ -98,11 +98,33 @@
         color: #ccccff;
       }
 
+   /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+ div.addthis_toolbox {
+  width:180px;
+  margin: 0 auto;
+ }
+	  
     </style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43040645-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + 
+
+'.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
   </head>
   <body>
 
-   <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
@@ -125,9 +147,7 @@
       </div>
     </div>
 
-
-
- <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <!-- http://stackoverflow.com/a/12270322 -->
     <div class="container">
@@ -151,8 +171,6 @@
           <img class="img-polaroid" alt="Placeholder" src="http://oi41.tinypic.com/2dlkvvd.jpg">
         </div>
 
-
-
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
           <div class="row-fluid">
@@ -168,7 +186,7 @@
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $25,000</p>
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
@@ -178,7 +196,7 @@
               </div>
             </div>
           </div>
-	<div class="row-fluid">
+          <div class="row-fluid">
           <div class="span10 offset1">
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
@@ -187,26 +205,34 @@
               <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
-	</div>
-	<div class="row-fluid">
+          </div>
+          <div class="row-fluid">
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
             <button class="btn btn-success btn-large">Preorder</button>
           </div>
-	  </div>
-	  <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          </div>
+          <div class="row-fluid">
+			<div class="span8 offset2 social">
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+			<a class="addthis_button_preferred_1"></a>
+			<a class="addthis_button_preferred_2"></a>
+			<a class="addthis_button_preferred_3"></a>
+			<a class="addthis_button_preferred_4"></a>
+			<a class="addthis_button_compact"></a>
+			<a class="addthis_counter addthis_bubble_style"></a>
+			</div>
+			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+			<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-
+
+			5202cc380b6bcf79"></script>
+			<!-- AddThis Button END -->
           </div>
         </div>
+        </div>
       </div>
-      </div>
-     </div>
-
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
@@ -214,40 +240,37 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-          <img class="img-polaroid" alt="Placeholder" src="http://oi39.tinypic.com/2wmf9j8.jpg">
+          <img class="img-polaroid"  alt="Placeholder" src="http://oi39.tinypic.com/2wmf9j8.jpg">
         </div>
         <div class="span5 copy">
           <p>
-		With an increased interest in local and organically grown fresh produce, 
-		Produce Portal aims to make it easier for consumers to find locally grown 
-		fresh produce of their choice listed by small local farmers to large farms 
-		to individuals with backyard gardens. While an increased awareness of our 
-		food production and supply chain is encouraging, there is a shortage of effective 
-		tools to help trade this basic necessity locally, directly to consumers as well as 
-		to form a trusted network of local food growers and enthusiasts.
+With an increased interest in local and organically grown fresh produce,
+Produce Portal aims to make it easier for consumers to find locally grown
+fresh produce of their choice listed by small local farmers to large farms
+to individuals with backyard gardens. While an increased awareness of our
+food production and supply chain is encouraging, there is a shortage of effective
+tools to help trade this basic necessity locally, directly to consumers as well as
+to form a trusted network of local food growers and enthusiasts.
           </p>
         </div>
       </div>
-
-
 
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-		Our aim is to provide people with a tool to not only trade produce 
-		but to meet, interact and form a network of people interested in local 
-		food, urban farming, organic food, sustainable farming, etc. As more and 
-		more people become part of such a network, it will encourage farmers to 
-		sell more of their produce locally and directly to consumers and well as 
-		encourage smaller farmers and individuals to grow more food. Through such 
-		an involvement from the people, Produce Portal aims to become a place of agricultural knowledge exchange. 
+Our aim is to provide people with a tool to not only trade produce
+but to meet, interact and form a network of people interested in local
+food, urban farming, organic food, sustainable farming, etc. As more and
+more people become part of such a network, it will encourage farmers to
+sell more of their produce locally and directly to consumers and well as
+encourage smaller farmers and individuals to grow more food. Through such
+an involvement from the people, Produce Portal aims to become a place of agricultural knowledge exchange.
           </p>
         </div>
         <div class="span5 asset">
-          <img class="img-polaroid" alt="Placeholder" src="http://i39.tinypic.com/2d7bm9f.jpg">
+          <img class="img-polaroid"  alt="Placeholder" src="http://i39.tinypic.com/2d7bm9f.jpg">
         </div>
       </div>
-
 
       <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
       <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
@@ -265,9 +288,9 @@
                 </div>
                 <div id="collapseOne" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Enter your zip code or city and optionally select the kind of 
-		produce you are looking for. The search will return with a list as 
-		well as a map view of local sellers.
+                    Enter your zip code or city and optionally select the kind of
+produce you are looking for. The search will return with a list as
+well as a map view of local sellers.
                   </div>
                 </div>
               </div>
@@ -280,12 +303,13 @@
                 </div>
                 <div id="collapseTwo" class="accordion-body collapse">
                   <div class="accordion-inner">
-                    Sign up as a seller and list your produce as well as price. 
-			Optionally include more details of your farming practices, bio, specialty of your farm, etc.
+                    Sign up as a seller and list your produce as well as price.
+Optionally include more details of your farming practices, bio, specialty of your farm, etc.
                   </div>
                 </div>
               </div>
-             <div class="accordion-group">
+			  
+			  <div class="accordion-group">
                 <div class="accordion-heading">
                   <a class="accordion-toggle" data-toggle="collapse"
                      data-parent="#accordion2" href="#collapseThree">
@@ -294,19 +318,18 @@
                 </div>
                 <div id="collapseThree" class="accordion-body collapse">
                   <div class="accordion-inner">
-		As you will be buying from the farmers, it's a great opportunity to 
-		interact with them directly. There is also an online forum where you can ask questions and share knowledge.
+As you will be buying from the farmers, it's a great opportunity to
+interact with them directly. There is also an online forum where you can ask questions and share knowledge.
                   </div>
                 </div>
               </div>
-
+			  
             </div>
           </div>
 
       </div>
 
-
-     <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
       <div class="row-fluid footer">
         <div class="span12">
@@ -318,7 +341,6 @@
         </div>
       </div>
     </div>
-
-
   </body>
 </html>
+
